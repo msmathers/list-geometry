@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Turn lists into geometric shapes">
+    <meta name="keywords" content="text list, text geometry, text shape, ASCII art">
+    <meta name="author" content="Mike Smathers">
+    <title>Text List Shaper</title>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <textarea id="input-textarea" spellcheck="false">Type unsorted list items here ...
+Svdden Death
+Kill The Noise x Seven Lions x Julia Ross
+LSDream x Liquid Stranger
+Whethan
+Baauer
+Quix
+Minnesota
+Of The Trees
+CloZee
+Savant
+Zeke Beats
+Shades
+G Jones</textarea>
+      </div>
+      <div class="menu">
+        <ul class="shape-menu" id="shape-menu">
+          <li data-shape-type="arrow-up">
+            <span>&#x25B2;</span>
+          </li>
+          <li data-shape-type="arrow-down">
+            <span>&#x25BC;</span>
+          </li>
+          <li data-shape-type="arrow-right">
+            <span>&#x25BA;</span>
+          </li>
+          <li data-shape-type="arrow-left">
+            <span>&#x25C0;</span>
+          </li>
+          <li data-shape-type="bottom-right">
+            <span>&#x25E2;</span>
+          </li>
+          <li data-shape-type="bottom-left">
+            <span>&#x25E3;</span>
+          </li>
+          <li data-shape-type="top-left">
+            <span>&#x25E4;</span>
+          </li>
+          <li data-shape-type="top-right">
+            <span>&#x25E5;</span>
+          </li>
+          <li data-shape-type="diamond" class="active">
+            <span class="diamond">&#x25C6;</span>
+          </li>
+          <li data-shape-type="hourglass">
+            <span>&#x25BC;</span>
+            <span>&#x25B2;</span>
+          </li>
+          <li data-shape-type="left-concave">
+            <span>&#x25E4;</span>
+            <span>&#x25E3;</span>
+          </li>
+          <li data-shape-type="right-concave">
+            <span>&#x25E5;</span>
+            <span>&#x25E2;</span>
+          </li>
+        </ul>
+      </div>
+      <div class="output-container" id="output-container">
+      </div>
+    </div>
+  </body>
+  <script src="shapes.js" type="text/javascript"></script>
+  <script src="app.js" type="text/javascript"></script>
+</html>

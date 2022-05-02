@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.container > * {
+  flex: 1
+}
+
+.input-container {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.input-container textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 16px;
+  color: #4AF626;
+  background-color: #000;
+  font-size: 24px;
+  font-family: monospace;
+}
+
+.output-container {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 16px;
+  background-color: #555;
+  color: #eee;
+  font-size: 24px;
+  white-space: pre;
+  font-family: monospace;
+  overflow: auto;
+  text-align: center;
+}
+
+.menu {
+  flex: 0;
+  height: 100%;
+  background-color: #333;
+}
+
+.shape-menu {
+  height: 100%;
+  list-style-type: none;
+  overflow-y: auto;
+}
+
+.shape-menu li {
+  color: #777;
+  font-size: 24px;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.shape-menu li:hover {
+  cursor: pointer;
+  background-color: #222;
+  color: #999;
+}
+
+.shape-menu li > span {
+  display: block;
+}
+
+.shape-menu li > span:nth-child(2) {
+  line-height: 0;
+  padding-bottom: 18px;
+}
+
+.shape-menu li.active {
+  background-color: #000;
+  color: #eee;
+}
+
+.shape-menu .diamond {
+  margin-top: -8px;
+  font-size: 40px;
+}
